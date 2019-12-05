@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomeView /> should match the snapshot 1`] = `
+<div>
+  <Redirect
+    to="/image-upload/"
+  />
+  <styled.div>
+    <styled.h1
+      top={true}
+      uppercase={true}
+    >
+      <Translate
+        tag="span"
+        value="common.app"
+      />
+    </styled.h1>
+    <styled.p>
+      <Translate
+        tag="span"
+        value="dashboard.welcome"
+      />
+    </styled.p>
+  </styled.div>
+</div>
+`;
