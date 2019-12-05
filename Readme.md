@@ -5,6 +5,7 @@
 ```
 start <your-artifac> see rest-spring-jpa
 cd rest-spring-jpa-react-frontend
+npm install
 npm start
 ```
 - open http://localhost:3000/home
