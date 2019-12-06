@@ -48,6 +48,7 @@ class Items extends React.Component {
     handleChange (evt) {
         const v = this.state['form'];
         v[evt.target.name] = evt.target.value;
+        debugger;
         this.setState({ 'form': v });
     }
 
@@ -89,9 +90,9 @@ class Items extends React.Component {
                     <label htmlFor="name">Enter name</label>
                     <input id="name" name="name" type="text" onChange={this.handleChange}/>
                     <br/>
-                    <label htmlFor="group">Enter item group</label>
-                    <select id="group" name="group" type="text" onChange={this.handleChange}>
-                        {this.state.groups.map((group) => <option key={group.id}>{group.name}</option>)}
+                    <label htmlFor="cgroup">Enter item group</label>
+                    <select id="cgroup" name="cgroup" type="text" onChange={this.handleChange}>
+                        {this.state.groups.map((group) => <option key={group.id} value={group.id}>{group.name}</option>)}
                     </select>
                     <br/>
                     <label htmlFor="description">Enter your description</label>

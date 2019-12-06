@@ -24,7 +24,7 @@ class ItemDataService {
     }
 
     addItem(item) {
-        return fetch(`http://localhost:8080/groups/${item.username}/items`, {
+        return fetch(`http://localhost:8080/groups/${item.cgroup}/items`, {
             method: 'POST',
             headers: {
                 "Content-type": "application/json; charset=UTF-8"
